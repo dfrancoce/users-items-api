@@ -21,6 +21,7 @@ public class UserController {
     }
 
     @ApiOperation("Retrieves the user and items for the username passed by parameter.")
+    @CrossOrigin(origins = "http://localhost:9080")
     @GetMapping("/user/{username}")
     @ResponseStatus(HttpStatus.OK)
     public User getByUsername(@PathVariable final String username) throws UserByUsernameNotFound {
