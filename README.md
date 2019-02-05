@@ -19,8 +19,6 @@ In the root directory execute:
 docker build -t task1-mysql .
 ```
 
-And
-
 ```
 docker run -d -p 3306:3306 --name task1-mysql -e MYSQL_ROOT_PASSWORD=testdevws task1-mysql
 ```
